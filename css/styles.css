@@ -1,0 +1,123 @@
+body {
+  font family: Georgia;
+  color: #2a2a2a;
+}
+
+h1 {
+  font-family: 'PostoniWide', 'Bodoni 72', 'Bodoni MT', Didot, 'Didot LT STD', 'Hoefler Text', Garamond, Georgia, serif;
+  font-size: calc(21px + 2.5vw);
+  font-weight: bold;
+  display: inline-block;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  display: inline-block;
+  margin: 0;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.96);
+  padding: 0 20px 0 16px;
+  display: block;
+  position: relative;
+  transition: transform 250ms ease-out;
+  height: 60px;
+  text-align: center;
+}
+
+article {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#navTagline {
+  font-size: 14px;
+  display: inline;
+  margin: 0;
+  color: #ccc;
+  font-style: italic;
+  font-size: 12px;
+  font-family: Georgia, serif;
+}
+
+#articleTopper {
+  margin: 10px 0 3px 0;
+}
+
+#twpLogo {
+  width: 181px;
+}
+
+#authorSigWrapper, #analysis, #analysisTooltipText {
+  font-family: Helvetica;
+  font-size: 14px;
+  display: inline-block;
+  color: #666;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+
+#analysisTooltipText {
+  margin-bottom: 0;
+}
+
+#analysis:before {
+  content: '\2022';
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  top: 0.05em;
+  position: relative;
+  font-family: Helvetica;
+}
+
+#analysisTooltip {
+  border: 1px solid #d5d5d5;
+  width: 280px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: absolute;
+  opacity: 0;
+  padding: 20px 36px 20px 20px;
+}
+
+#analysisTooltip:after, #analysisTooltip:before {
+  bottom: 100%;
+  left: 13%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#analysisTooltip:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 15px;
+  margin-left: -15px;
+}
+
+#analysisTooltip:before {
+  border-color: rgba(213, 213, 213, 0);
+  border-bottom-color: #d5d5d5;
+  border-width: 16px;
+  margin-left: -16px;
+}
+
+#section, #author {
+  color: #1955a5;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#author:hover {
+  text-decoration: underline;
+}
