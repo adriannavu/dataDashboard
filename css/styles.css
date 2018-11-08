@@ -3,18 +3,20 @@ body {
   color: #2a2a2a;
 }
 
+h1, p {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}
+
 h1 {
   font-family: 'PostoniWide', 'Bodoni 72', 'Bodoni MT', Didot, 'Didot LT STD', 'Hoefler Text', Garamond, Georgia, serif;
   font-size: calc(21px + 2.5vw);
   font-weight: bold;
-  display: inline-block;
-  margin: 0;
 }
 
 p {
   font-size: 14px;
-  display: inline-block;
-  margin: 0;
 }
 
 nav {
@@ -33,21 +35,19 @@ article {
 }
 
 #navTagline {
-  font-size: 14px;
-  display: inline;
-  margin: 0;
   color: #ccc;
   font-style: italic;
   font-size: 12px;
-  font-family: Georgia, serif;
+  font-family: Georgia;
 }
 
 #articleTopper {
-  margin: 10px 0 3px 0;
+  margin-top: 20px;
 }
 
 #twpLogo {
   width: 181px;
+  margin-top: 5px;
 }
 
 #authorSigWrapper, #analysis, #analysisTooltipText {
@@ -56,11 +56,6 @@ article {
   display: inline-block;
   color: #666;
   line-height: 22px;
-  margin-bottom: 18px;
-}
-
-#analysisTooltipText {
-  margin-bottom: 0;
 }
 
 #analysis:before {
@@ -81,8 +76,9 @@ article {
   align-items: center;
   background: white;
   position: absolute;
-  opacity: 0;
+  visibility: hidden;
   padding: 20px 36px 20px 20px;
+  z-index: 1;
 }
 
 #analysisTooltip:after, #analysisTooltip:before {
@@ -120,4 +116,18 @@ article {
 
 #author:hover {
   text-decoration: underline;
+}
+
+#authorSigWrapper, #main p {
+  margin-bottom: 16px;
+}
+
+#main p {
+  font-size: calc(16.4px + 0.175vw);
+}
+
+#main a {
+  color: #2c6cb4;
+  border-bottom: 1px solid #d5d5d5;
+  text-decoration: none;
 }
