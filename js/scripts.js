@@ -21,14 +21,11 @@ analysisLabel.addEventListener('mouseleave', function() {
   analysisTooltip.style.visibility = 'hidden';
 });
 
-//EXECUTIVE PERCENTAGES BY RACE/ETHNICITY IN PRIVATE INDUSTRY 2008-2016 DATA TABLE
-$('#execDataTable').DataTable({
-  ajax: {
-    url: '/js/EEO-1.json',
-    dataSrc: ''
-  },
-  columns: [{
-      "data": "Executives Race/Ethnicity"
+//RAW DATA BY RACE/ETHNICITY IN PRIVATE INDUSTRY 2008-2016 DATA TABLE
+$('#rawDataTable').DataTable({
+  "ajax": "/js/EEO-1.txt",
+  "columns": [{
+      "data": "Cohort"
     },
     {
       "data": "2008"
@@ -57,5 +54,47 @@ $('#execDataTable').DataTable({
     {
       "data": "2016"
     }
+  ],
+  "order": [
+    [0, "desc"]
   ]
-}); //close DataTables
+}); //close rawDataTable
+
+//PERCENTAGE DATA BY RACE/ETHNICITY IN PRIVATE INDUSTRY 2008-2016 DATA TABLE
+$('#percDataTable').DataTable({
+  "ajax": "/js/EEO-1Perc.txt",
+  "columns": [{
+      "data": "Cohort"
+    },
+    {
+      "data": "2008"
+    },
+    {
+      "data": "2009"
+    },
+    {
+      "data": "2010"
+    },
+    {
+      "data": "2011"
+    },
+    {
+      "data": "2012"
+    },
+    {
+      "data": "2013"
+    },
+    {
+      "data": "2014"
+    },
+    {
+      "data": "2015"
+    },
+    {
+      "data": "2016"
+    }
+  ],
+  "order": [
+    [0, "desc"]
+  ]
+}); //close percDataTable
