@@ -9,137 +9,143 @@
 </head>
 
 <body>
+  <div class="grid-container">
+    <nav class="nav">
+      <img id="twpLogo" src="img/twpLogo.png" alt = "The Washington Post Logo"/>
+      <div>
+        <p id="navTagline">Democracy Dies in Darkness</p>
+      </div>
+    </nav>
 
-  <nav>
-    <img id="twpLogo" src="img/twpLogo.png" alt = "The Washington Post Logo"/>
-    <div>
-      <p id="navTagline">Democracy Dies in Darkness</p>
-    </div>
-  </nav>
+    <div class="left"></div>
 
-  <article>
-    <div id="articleTopper">
-      <a id="section" href="https://www.washingtonpost.com/business/on-leadership/">
-        On Leadership
+    <div class="main">
+      <article id="article">
+        <div id="articleTopper">
+          <a id="section" href="https://www.washingtonpost.com/business/on-leadership/">
+          On Leadership
+        </a>
+          <div id="analysis">
+            <p id="analysisLabel">
+              Analysis
+            </p>
+            <div id="analysisTooltip">
+              <p id="analysisTooltipText">
+                Interpretation of the news based on evidence, including data, as well as anticipating how events might unfold based on past events
+              </p>
+            </div>
+          </div>
+
+          <h1>Asian-Americans are the Least Likely to Be Promoted to Management in the U.S.</h1>
+          <div id="authorSigWrapper">
+            <p>
+              By
+            </p>
+            <a id="author" href="https://adriannavu.com">
+        Adrianna Vu
       </a>
-      <div id="analysis">
-        <p id="analysisLabel">
-          Analysis
-        </p>
-        <div id="analysisTooltip">
-          <p id="analysisTooltipText">
-            Interpretation of the news based on evidence, including data, as well as anticipating how events might unfold based on past events
-          </p>
-        </div>
-      </div>
+            <br />
+            <p>
+              November 7, 2018
+            </p>
+          </div>
 
-      <h1>Asian-Americans are the Least Likely to Be Promoted to Management in the U.S.</h1>
-      <div id="authorSigWrapper">
-        <p>
-          By
-        </p>
-        <a id="author" href="https://adriannavu.com">
-      Adrianna Vu
-    </a>
-        <br />
-        <p>
-          November 7, 2018
-        </p>
-      </div>
+          <div id="main">
+            <p>
+              Asian Americans are the forgotten minority in the glass ceiling conversation.
+            </p>
+            <p>
+              By analyzing
+              <a href = "https://www.eeoc.gov/eeoc/statistics/employment/jobpat-eeo1/">
+           national EEOC workforce data</a>, it can be concluded that
+              Asian American white-collar professionals are the least likely group
+              to be promoted from individual contributor roles into management — less
+              likely than any other race, including blacks and Hispanics. White
+              professionals are about twice as likely to be
+              promoted into management as their Asian American counterparts.
+            </p>
+            <h2>Executive and Professional Number of Employees by Race/Ethnicity in Private Industry 2008-2016</h2>
+            <h3>U.S. National Aggregate</h3>
+            <table id="rawDataTable" class="display" style="width:100%">
+              <!---content will go here--->
+              <thead>
+                <tr>
+                  <th>Cohort</th>
+                  <th>2008</th>
+                  <th>2009</th>
+                  <th>2010</th>
+                  <th>2011</th>
+                  <th>2012</th>
+                  <th>2013</th>
+                  <th>2014</th>
+                  <th>2015</th>
+                  <th>2016</th>
+                </tr>
+              </thead>
+            </table>
+            <p>
+              This data table summarizes the EEO-1 data for each race in the Executive and Professional categories.
+            </p>
+            <h2>Executive and Professional Percentages by Race/Ethnicity in Private Industry 2008-2016</h2>
+            <h3>U.S. National Aggregate</h3>
+            <table id="percDataTable" class="display" style="width:100%">
+              <!---content will go here--->
+              <thead>
+                <tr>
+                  <th>Cohort</th>
+                  <th>2008</th>
+                  <th>2009</th>
+                  <th>2010</th>
+                  <th>2011</th>
+                  <th>2012</th>
+                  <th>2013</th>
+                  <th>2014</th>
+                  <th>2015</th>
+                  <th>2016</th>
+                </tr>
+              </thead>
+            </table>
+            <p>
+              This data table summarizes the EEO-1 data as percentages for each race in the Executive and Professional categories.
+              American Indians and Hawaiiwans have been excluded because their percentages were statistically negligable.
+              By using this data, we can better understand the recruiting vs. promotion effects for Asians in the United States.
+              It is easy to understand why Asian American representation in the workforce may not seem to be an issue.
+              In some key measures, Asian Americans are the most successful U.S. demographic — more highly educated,
+              for example, and with higher median incomes than any other racial group.
+              More significant, Asian Americans are 13% of the professional workforce while making up only 5.6% of the U.S. population.
+              However, Asians are only 6% of the executive workforce. Compared to their 13% share of professionals,
+              Asians are not as successfully being promoted to the Executive level.
+            </p>
+            <h2>Professional vs Executive Representation by Race/Ethnicity</h2>
+            <div id="whiteLineGraph" style="width:100%; height:400px;"></div>
+            <div id="hispanicLineGraph" style="width:100%; height:400px;"></div>
+            <div id="blackLineGraph" style="width:100%; height:400px;"></div>
+            <div id="asianLineGraph" style="width:100%; height:400px;"></div>
+            <p>
+              The above line graphs show the gaps between the percentages of professionals
+              and executives per race/ethnicity.
+              In 2016, the gap between white professionals and executives was 14%,
+              the gap between hispanic professionals and executives was 0,
+              the gap between black professionals and executives was -5%,
+              and the gap between asian professionals and executives was -7%.
+              Based on most recent EEO-1 data, Asians had the largest negative
+              disparity between representation of Executives and Professionals.
+              <br />
+              <br />
+            Fortunately, some companies have found ways to close the gap.
+            Several years ago, one global energy company commissioned an internal task force to review the status of women and minorities in its leadership pipeline. Reporting to the executive staff, the task force found insufficient gender and racial diversity in the pipeline, including Asian diversity, and recommended specific actions. With strong CEO and executive support, the company quickly moved to identify potential leaders and significantly increase its spending for leadership training for women and minorities. For its Asian workforce, it
+              <a href="https://www.gsb.stanford.edu/exec-ed/programs/advanced-leadership-program-asian-american-executives">partnered with a major business school</a> to integrate culturally specific training into its leadership development program
+              for Asian American managers.
+              This example provides the key steps that corporations can take to address the Asian glass ceiling.
+            </p>
+          </div>
+      </article>
+    </div>
+  </div>
+  <div class="side"></div>
 
-      <div id="main">
-        <p>
-          Asian Americans are the forgotten minority in the glass ceiling conversation.
-        </p>
-        <p>
-          By analyzing
-          <a href = "https://www.eeoc.gov/eeoc/statistics/employment/jobpat-eeo1/">
-         national EEOC workforce data</a>, it can be concluded that
-          Asian American white-collar professionals are the least likely group
-          to be promoted from individual contributor roles into management — less
-          likely than any other race, including blacks and Hispanics. White
-          professionals are about twice as likely to be
-          promoted into management as their Asian American counterparts.
-        </p>
-        <h2>Executive and Professional Number of Employees by Race/Ethnicity in Private Industry 2008-2016</h2>
-        <h3>U.S. National Aggregate</h3>
-        <table id="rawDataTable" class="display" style="width:100%">
-          <!---content will go here--->
-          <thead>
-            <tr>
-              <th>Cohort</th>
-              <th>2008</th>
-              <th>2009</th>
-              <th>2010</th>
-              <th>2011</th>
-              <th>2012</th>
-              <th>2013</th>
-              <th>2014</th>
-              <th>2015</th>
-              <th>2016</th>
-            </tr>
-          </thead>
-        </table>
-        <p>
-          This data table summarizes the EEO-1 data for each race in the Executive and Professional categories.
-        </p>
-        <h2>Executive and Professional Percentages by Race/Ethnicity in Private Industry 2008-2016</h2>
-        <h3>U.S. National Aggregate</h3>
-        <table id="percDataTable" class="display" style="width:100%">
-          <!---content will go here--->
-          <thead>
-            <tr>
-              <th>Cohort</th>
-              <th>2008</th>
-              <th>2009</th>
-              <th>2010</th>
-              <th>2011</th>
-              <th>2012</th>
-              <th>2013</th>
-              <th>2014</th>
-              <th>2015</th>
-              <th>2016</th>
-            </tr>
-          </thead>
-        </table>
-        <p>
-          This data table summarizes the EEO-1 data as percentages for each race in the Executive and Professional categories.
-          American Indians and Hawaiiwans have been excluded because their percentages were statistically negligable.
-          By using this data, we can better understand the recruiting vs. promotion effects for Asians in the United States.
-          It is easy to understand why Asian American representation in the workforce may not seem to be an issue.
-          In some key measures, Asian Americans are the most successful U.S. demographic — more highly educated,
-          for example, and with higher median incomes than any other racial group.
-          More significant, Asian Americans are 13% of the professional workforce while making up only 5.6% of the U.S. population.
-          However, Asians are only 6% of the executive workforce. Compared to their 13% share of professionals,
-          Asians are not as successfully being promoted to the Executive level.
-        </p>
-        <h2>Professional vs Executive Representation by Race/Ethnicity</h2>
-        <div id="whiteLineGraph" style="width:100%; height:400px;"></div>
-        <div id="hispanicLineGraph" style="width:100%; height:400px;"></div>
-        <div id="blackLineGraph" style="width:100%; height:400px;"></div>
-        <div id="asianLineGraph" style="width:100%; height:400px;"></div>
-        <p>
-          The above line graphs show the gaps between the percentages of professionals
-          and executives per race/ethnicity.
-          In 2016, the gap between white professionals and executives was 14%,
-          the gap between hispanic professionals and executives was 0,
-          the gap between black professionals and executives was -5%,
-          and the gap between asian professionals and executives was -7%.
-          Based on most recent EEO-1 data, Asians had the largest negative
-          disparity between representation of Executives and Professionals.
-          <br />
-          <br />
-
-        Fortunately, some companies have found ways to close the gap.
-Several years ago, one global energy company commissioned an internal task force to review the status of women and minorities in its leadership pipeline. Reporting to the executive staff, the task force found insufficient gender and racial diversity in the pipeline, including Asian diversity, and recommended specific actions. With strong CEO and executive support, the company quickly moved to identify potential leaders and significantly increase its spending for leadership training for women and minorities. For its Asian workforce, it
-          <a href="https://www.gsb.stanford.edu/exec-ed/programs/advanced-leadership-program-asian-american-executives">partnered with a major business school</a> to integrate culturally specific training into its leadership development program for
-          Asian American managers.
-          This example provides the key steps that corporations can take to address the Asian glass ceiling.
-        </p>
-      </div>
-
-  </article>
-
+  <div class="right"></div>
+  </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
