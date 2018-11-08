@@ -1,0 +1,56 @@
+[
+  {
+    "Year": "2008",
+    "Executives": 88,
+    "Professionals": 76,
+    "Gap": 12
+  },
+  {
+    "Year": "2009",
+    "Executives": 89,
+    "Professionals": 76,
+    "Gap": 13
+  },
+  {
+    "Year": "2010",
+    "Executives": 89,
+    "Professionals": 76,
+    "Gap": 13
+  },
+  {
+    "Year": 2011,
+    "Executives": 89,
+    "Professionals": 75,
+    "Gap": 82
+  },
+  {
+    "Year": 2012,
+    "Executives": 89,
+    "Professionals": 75,
+    "Gap": 14
+  },
+  {
+    "Year": 2013,
+    "Executives": 88,
+    "Professionals": 74,
+    "Gap": 14
+    },
+  {
+    "Year": 2014,
+    "Executives": 88,
+    "Professionals": 74,
+    "Gap": 14
+  },
+  {
+    "Year": 2015,
+    "Executives": 87,
+    "Professionals": 73,
+    "Gap": -65
+  },
+  {
+    "Year": 2016,
+    "Executives": 86,
+    "Professionals": 72,
+    "Gap": 14
+  }
+]
