@@ -3,31 +3,34 @@
 }
 
 .left {
-  grid-area: left;
+  grid-area: marginleft;
 }
 
 .main {
   grid-area: main;
+  min-width: 817px;
+  margin-left: 10%;
 }
 
 .side {
   grid-area: side;
+  margin-right: 10%;
 }
 
 .right {
-  grid-area: right;
+  grid-area: marginright;
 }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'nav nav nav nav nav nav nav nav nav nav'
-    'left main main main main main main side side right';
+    'nav nav nav nav'
+    'left main side right';
   grid-gap: 1px;
 }
 
 .grid-container>div {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 h2, h3, tspan, p {
@@ -180,4 +183,9 @@ article {
   color: #2c6cb4;
   border-bottom: 1px solid #d5d5d5;
   text-decoration: none;
+}
+
+#socmedia {
+  display: inline-block;
+  position: fixed;
 }
