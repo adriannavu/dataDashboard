@@ -1,5 +1,23 @@
+@font-face {
+  font-family: SlimSansSerif;
+  src: url('SlimSansSerif.ttf');
+}
+
+@font-face {
+  font-family: SlimSansSerif;
+  font-weight: bold;
+  src: url('SlimSansSerif-Bold.ttf');
+}
+
 .nav {
   grid-area: nav;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.flex-container>div {
+  margin: 7px;
 }
 
 .left {
@@ -14,7 +32,8 @@
 
 .side {
   grid-area: side;
-  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 
 .right {
@@ -34,7 +53,6 @@
 }
 
 h2, h3, tspan, p {
-  font-family: Georgia;
   color: #2a2a2a;
 }
 
@@ -50,8 +68,12 @@ p {
   margin: 0;
 }
 
-h2, h3, tspan, p {
-  font family: Georgia;
+h2, h3 {
+  font-weight: bold;
+}
+
+label, h2, th, td, tspan, text, .dataTables_info, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active, .dataTables_wrapper .dataTables_paginate .paginate_button, .paginate_button.current {
+  font-family: SlimSansSerif
 }
 
 h1 {
@@ -61,11 +83,13 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 26px;
+  margin-top: 18px;
 }
 
 h3 {
   font-size: 16px;
+  font-weight: 200;
 }
 
 p {
@@ -74,7 +98,6 @@ p {
 
 nav {
   background: rgba(0, 0, 0, 0.96);
-  padding: 0 20px 0 16px;
   display: block;
   position: relative;
   transition: transform 250ms ease-out;
@@ -82,9 +105,8 @@ nav {
   text-align: center;
 }
 
-article {
-  margin-left: 5%;
-  margin-right: 5%;
+article p {
+  line-height: calc(1.5em + 0.3333vw);
 }
 
 #navTagline {
@@ -94,13 +116,8 @@ article {
   font-family: Georgia;
 }
 
-#articleTopper {
-  margin-top: 20px;
-}
-
 #twpLogo {
   width: 181px;
-  margin-top: 5px;
 }
 
 #authorSigWrapper, #analysis, #analysisTooltipText {
@@ -189,3 +206,20 @@ article {
   display: inline-block;
   position: fixed;
 }
+
+table.dataTable tbody th, table.dataTable tbody td {
+  padding: 5px 5px !important;
+}
+
+.dataTables_wrapper {
+  padding: 20px 0 20px 0;
+}
+
+#whiteLineGraph, #hispanicLineGraph, #blackLineGraph, #asianLineGraph {
+  padding: 20px 0 20px 0;
+}
+
+@media screen and (max-width:37.5em) {
+  .main p {
+    font-size: calc(16.4px + 0.175vw);
+  }

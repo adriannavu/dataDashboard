@@ -146,7 +146,7 @@ function buildWhiteLineGraph() {
         dataLabels: {
           enabled: true
         },
-        enableMouseTracking: false
+        enableMouseTracking: true
       }
     },
     series: [{
@@ -204,7 +204,7 @@ function buildHispanicLineGraph() {
         dataLabels: {
           enabled: true
         },
-        enableMouseTracking: false
+        enableMouseTracking: true
       }
     },
     series: [{
@@ -262,7 +262,7 @@ function buildBlackLineGraph() {
         dataLabels: {
           enabled: true
         },
-        enableMouseTracking: false
+        enableMouseTracking: true
       }
     },
     series: [{
@@ -320,7 +320,7 @@ function buildAsianLineGraph() {
         dataLabels: {
           enabled: true
         },
-        enableMouseTracking: false
+        enableMouseTracking: true
       }
     },
     series: [{
